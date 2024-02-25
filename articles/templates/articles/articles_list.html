@@ -1,13 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>مقالات</title>
-</head>
-<body>
+{%extends 'extand.html'%}
+{%block extend%}
     <h2 class="titr-page">مقالات</h2>
     <div class="row">
         {% while 4: %}
@@ -19,5 +11,4 @@
         </div>
         {% end while %}
     </div>
-</body>
-</html>
+{%endblock%}
